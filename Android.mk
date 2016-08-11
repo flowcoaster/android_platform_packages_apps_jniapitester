@@ -5,11 +5,17 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
-LOCAL_REQUIRED_MODULES := libjniapitester
-
 LOCAL_PACKAGE_NAME := JniApiTester
 LOCAL_CERTIFICATE := platform
 
-include $(call all-makefiles-under, jni)
+ifneq (,$(TARGET_BUILD_APPS))
+  LOCAL_JNI_SHARED_LIBRARIES := libjniapitester
+else
+  LOCAL_REQUIRED_MODULES := libjniapitester
+endif
 
 include $(BUILD_PACKAGE)
+
+include $(call all-makefiles-under, jni)
+
+include $(call all-makefiles-under,$(LOCAL_PATH))
