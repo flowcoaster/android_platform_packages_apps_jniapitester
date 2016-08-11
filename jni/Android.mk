@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_LDFLAGS 	:= -llog
-LOCAL_MODULE    := libjniapitester
+LOCAL_MODULE    := libjniApiTester
 LOCAL_SRC_FILES := jniApiTester.cpp
 
 include $(BUILD_SHARED_LIBRARY)

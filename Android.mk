@@ -9,9 +9,9 @@ LOCAL_PACKAGE_NAME := JniApiTester
 LOCAL_CERTIFICATE := platform
 
 ifneq (,$(TARGET_BUILD_APPS))
-  LOCAL_JNI_SHARED_LIBRARIES := libjniapitester
+  LOCAL_JNI_SHARED_LIBRARIES := libjniApiTester
 else
-  LOCAL_REQUIRED_MODULES := libjniapitester
+  LOCAL_REQUIRED_MODULES := libjniApiTester
 endif
 
 include $(BUILD_PACKAGE)
