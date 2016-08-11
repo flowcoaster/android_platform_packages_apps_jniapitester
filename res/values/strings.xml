@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">JNIApiTester</string>
+  <string name="app_name">JNIApiTester</string>
+  <string name="text_view">I am a TextView</string>
+  <string name="start">Start testing of JNI interface</string>
+  <string name="one">1</string>
 </resources>
